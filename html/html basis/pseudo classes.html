@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Pseudo-Classes and Pseudo-Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: #333;
+            padding: 15px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Hover effect on links */
+        nav a:hover {
+            color: yellow;
+        }
+
+        /* Active link styles (when clicked) */
+        nav a:active {
+            color: red;
+        }
+
+        /* nth-child pseudo-class: style every odd-numbered item */
+        ul li:nth-child(odd) {
+            background-color: #e2e2e2;
+        }
+
+        /* nth-child pseudo-class: style every even-numbered item */
+        ul li:nth-child(even) {
+            background-color: #d0d0d0;
+        }
+
+        /* Style for the list items */
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px;
+        }
+
+        ul li {
+            padding: 15px;
+            border: 1px solid #ccc;
+            margin-bottom: 5px;
+        }
+
+        /* Pseudo-element: add content after each list item */
+        ul li::after {
+            content: " ✅";  /* Adds a checkmark after each list item */
+            color: green;
+        }
+
+        /* Section styles */
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #html {
+            background-color: lightcoral;
+        }
+
+        #css {
+            background-color: lightblue;
+        }
+
+        #JS {
+            background-color: lightgreen;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#html"> html</a>
+        <a href="#css">css</a>
+        <a href="#JS">javascript</a>
+    </nav>
+
+    <ul>
+        <li>Assignment 1</li>
+        <li>Assignment 2</li>
+        <li>Assignment 3</li>
+        
+    </ul>
+
+    <section id="html">
+        <h1>html</h1>
+        <p>html stands for hypertext markup language</p>
+    </section>
+
+    <section id="css">
+        <h1>css</h1>
+        <p> css stands for cascading style sheets</p>
+    </section>
+
+    <section id="JS">
+        <h1>JS</h1>
+        <p>JS stands for javascript</p>
+    </section>
+
+</body>
+</html>

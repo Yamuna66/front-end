@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Simple Web Page</title>
+</head>
+<body bgcolor="lightgreen">
+
+    <!-- Article section -->
+    <article>
+        <h1>Contact Us</h1>
+        <p>Please fill out the form below to get in touch with us.</p>
+    </article>
+
+    <!-- Form section -->
+    <form action="/submit" method="POST">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br><br>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+            <br><br>
+            
+            <button type="submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <!-- Table section -->
+    <table border="1">
+        <caption>Sample Data Table</caption>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>lucky</td>
+                <td>mummy1@gmail.com</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>yamuna</td>
+                <td>yamuna7@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
